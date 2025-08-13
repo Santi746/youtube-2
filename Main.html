@@ -1,209 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
-<link rel="stylesheet" href=".\STYLES\Main.css">
+    <link rel="stylesheet" href=".\STYLES\Main.css">
 </head>
+
 <body>
- <header>
-    <nav class="navbar">  
-        <section class="upper-navbar">
-            <div class="flex-start">
-                <div class="logo-container">
-                    <img src=".\images\images navbar\hamburger-2-svgrepo-com.svg" alt="burger" id="burger-icon">
-                    <img src=".\images\images navbar\Captura de pantalla 2025-08-08 102858.png" alt="logo" id="logo" style="width: 124px;">
+    <header>
+        <nav class="navbar">
+            <section class="upper-navbar">
+                <div class="flex-start">
+                    <div class="logo-container">
+                        <img src=".\images\images navbar\hamburger-2-svgrepo-com.svg" alt="burger" id="burger-icon">
+                        <img src=".\images\images navbar\Captura de pantalla 2025-08-08 102858.png" alt="logo" id="logo"
+                            style="width: 124px;">
+                    </div>
                 </div>
-            </div> 
-            <div class="flex-center">
-                <div class="search-bar">
-                    <input id="search" type="search" placeholder="Buscar">
-                    <img src=".\images\images navbar\search-svgrepo-com (6).svg" alt="search-logo" id="search-logo" style="width: 25px;">"
+                <div class="flex-center">
+                    <div class="search-bar">
+                        <input id="search" type="search" placeholder="Buscar">
+                        <img src=".\images\images navbar\search-svgrepo-com (6).svg" alt="search-logo" id="search-logo"
+                            style="width: 25px;">"
+                    </div>
+                    <div class="logo-mic">
+                        <button class="mic-button">
+                            <img src=".\images\images navbar\microphone-svgrepo-com (9).svg" alt="microfono" class="mic"
+                                style="width: 30px;">
+                        </button>
+                    </div>
                 </div>
-                <div class="logo-mic">
-                    <button class="mic-button">
-                        <img src=".\images\images navbar\microphone-svgrepo-com (9).svg" alt="microfono" class="mic" style="width: 30px;">
-                    </button>
+                <div class="flex-end">
+                    <div class="create-button">
+                        <button id="button1">
+                            <img src=".\images\images navbar\plus-svgrepo-com (1).svg" alt="create-logo"
+                                id="create-logo" style="width: 20px;"><strong>
+                                Crear</strong></button>
+                    </div>
+                    <div class="notification">
+                        <img src=".\images\images navbar\notifications-outline-svgrepo-com.svg" alt="notification-logo"
+                            id="notification-logo" style="width: 28px;">
+                    </div>
+                    <div class="account">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.53y5ZTj4hyCXhmOtV6ahYAAAAA?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm="
+                            alt="account-logo" id="account-logo" style="width: 40px; border-radius: 50px;">
+                    </div>
                 </div>
-            </div>
-            <div class="flex-end">
-                <div class="create-button">
-                    <button id="button1">
-                        <img src=".\images\images navbar\plus-svgrepo-com (1).svg" alt="create-logo" id="create-logo" style="width: 20px;"><strong>
-               Crear</strong></button>
+            </section>
+        </nav>
+    </header>
+    <main class="main">
+        <aside class="aside-nav">
+            <section class="small-aside">
+                <div class="home">
+                    <img src=".\images\aside images\Captura de pantalla 2025-08-10 031535.png" alt="principal"
+                        id="home-logo">
+                    <p>Principal</p>
                 </div>
-                <div class="notification">
-                    <img src=".\images\images navbar\notifications-outline-svgrepo-com.svg" alt="notification-logo" id="notification-logo" style="width: 28px;">
+                <div class="shorts">
+                    <img src=".\images\aside images\Captura de pantalla 2025-08-10 031556.png" alt="shorts"
+                        id="shorts-logo">
+                    <p>Shorts</p>
                 </div>
-                <div class="account">
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.53y5ZTj4hyCXhmOtV6ahYAAAAA?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=" alt="account-logo" id="account-logo" style="width: 40px; border-radius: 50px;">
+                <div class="subs">
+                    <img src=".\images\aside images\Captura de pantalla 2025-08-10 031609.png" alt="subscripciones"
+                        id="subs-logo">
+                    <p>Subscripciones</p>
                 </div>
-            </div>
-        </section>
-    </nav>
- </header>
- <main class="main">
-    <aside class="aside-nav">
-        <section class="small-aside">
-            <div class="home">
-                <img src=".\images\aside images\Captura de pantalla 2025-08-10 031535.png" alt="principal" id="home-logo">
-                <p>Principal</p>
-            </div>
-            <div class="shorts">
-                <img src=".\images\aside images\Captura de pantalla 2025-08-10 031556.png" alt="shorts" id="shorts-logo">
-                <p>Shorts</p>
-            </div>
-            <div class="subs">
-                <img src=".\images\aside images\Captura de pantalla 2025-08-10 031609.png" alt="subscripciones" id="subs-logo">
-                <p>Subscripciones</p>
-            </div>
-            <div class="you">
-                <img src=".\images\aside images\Captura de pantalla 2025-08-10 031625.png" alt="Tu cuenta Aside" id="you">
-                <p>Tu</p>
-            </div>
-            <div class="downloads">
-                <img src=".\images\aside images\Captura de pantalla 2025-08-10 031632.png" alt="logo descargas" id="download-logo">
-                <p>Descargas</p>
-            </div>
-        </section>
-    </aside>
-    <section class="main-container">
-        <section class="themes-container">
-            <div class="themes">
-                <ul class="themes-list">
-                    <li class="theme-style">Todos</li>
-                    <li class="theme-style">Videojuegos</li>
-                    <li class="theme-style">Musica</li>
-                    <li class="theme-style">Mixes</li>
-                    <li class="theme-style">Tecnologia</li>
-                    <li class="theme-style">Progamacion</li>
-                    <li class="theme-style">Anime</li>
-                    <li class="theme-style">Politica</li>
-                    <li class="theme-style">Lenguajes de Progamacion</li>
-                    <li class="theme-style">Desarrollo Web</li>
-                    <li class="theme-style">En Tiempo Real</li>
-                    <li class="theme-style">Subidos Recientemente</li>
-                    <li class="theme-style">Vistos</li>
-                    <li class="theme-style">Novedades para ti</li>
-                </ul>
-        </section>
-        <section class="videos">
-            <section class="first-section">
-                <section class="video1">
+                <div class="you">
+                    <img src=".\images\aside images\Captura de pantalla 2025-08-10 031625.png" alt="Tu cuenta Aside"
+                        id="you">
+                    <p>Tu</p>
+                </div>
+                <div class="downloads">
+                    <img src=".\images\aside images\Captura de pantalla 2025-08-10 031632.png" alt="logo descargas"
+                        id="download-logo">
+                    <p>Descargas</p>
+                </div>
+            </section>
+        </aside>
+        <section class="main-container">
+            <section class="themes-container">
+                <div class="themes">
+                    <ul class="themes-list">
+                        <li class="theme-style">Todos</li>
+                        <li class="theme-style">Videojuegos</li>
+                        <li class="theme-style">Musica</li>
+                        <li class="theme-style">Mixes</li>
+                        <li class="theme-style">Tecnologia</li>
+                        <li class="theme-style">Progamacion</li>
+                        <li class="theme-style">Anime</li>
+                        <li class="theme-style">Politica</li>
+                        <li class="theme-style">Lenguajes de Progamacion</li>
+                        <li class="theme-style">Desarrollo Web</li>
+                        <li class="theme-style">En Tiempo Real</li>
+                        <li class="theme-style">Subidos Recientemente</li>
+                        <li class="theme-style">Vistos</li>
+                        <li class="theme-style">Novedades para ti</li>
+                    </ul>
+            </section>
+            <section class="videos">
+                <section class="videos-section">
+                    <section class="video-container" id="v-1"> 
                         <div class="thumbnail-1">
                             <img src=".\images\videos images\Captura de pantalla 2025-08-11 224641.png" id="image1">
                         </div>
-                    <section class="titular1">
-                        <div class="channel1">
-                         <img src=".\images\videos images\Captura de pantalla 2025-08-11 225902.png" alt="channel-video1" id="video1-logo">
-                        </div>
-                        <div class="video1-title">
-                            <p class="channel-title1" id="title1"><strong>“A la caza del Cartel de los Soles”: EEUU difunde entrenamientos de captura</strong>
-                            </p>
-                        </div>
-                        <div class="video1-option"> 
-                            <img src=".\images\videos images\options-vertical-svgrepo-com.svg" style="width: 30px; height: 30px;">
-                        </div>
-                    </section>
-                        <div class="channel1-name">
-                        <p>David Placer</p>
-                        <p>58 k vistas • Transmitido hace 2 horas</p>
-                        </div>   
-                </section>                                           
-                <section class="video2">
-                        <div class="thumbnail-2">
-                            <img src=".\images\videos images\Captura de pantalla 2025-08-12 194731.png" alt="miniatura-2" id="image2">
-                        </div>
-                    <section class="all-content">
-                        <section class="titular2">
-                            <div class="channel2">
-                                <img src=".\images\videos images\Captura de pantalla 2025-08-12 194813.png" alt="channel-logo" id="channel2-logo">
+                        <section class="titular-channel-1">
+                            <div class="channel-logo-1">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-11 225902.png"
+                                    alt="channel-video1" id="video1-logo">
                             </div>
-                            <div class="video2-title">
-                                <p><strong>HICE UNA ESFERA PERFECTA DE TIERRA ORDINARIA - UNA ANTIGUA TÉCNICA JAPONESA</strong></p>
+                            <div class="video-title-1">
+                                <p class="channel-title1" id="title1"><strong>“A la caza del Cartel de los Soles”: EEUU
+                                        difunde entrenamientos de captura</strong>
+                                </p>
                             </div>
-                            <div class="video2-option">
-                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" alt="options." style="width: 30px; height: 30px;">
+                            <div class="video-option-1">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg"
+                                    style="width: 30px; height: 30px;">
                             </div>
                         </section>
-                        <div class="channel2-name">
-                            <p>El Mundo de Slivki</p>
-                            <p>2.6 M de vistas • hace 3 semanas</p>
+                        <div class="viewers-name-1">
+                            <p>David Placer</p>
+                            <p>58 k vistas • Transmitido hace 2 horas</p>
                         </div>
                     </section>
-                </section>
-                <section class="video3">
-                    <div class="thumbnail-3">
-                        <img src=".\images\videos images\Captura de pantalla 2025-08-13 001526.png" alt="estoy cansado jefe" id="image3">
-                    </div>
-                <section class="titular3">
-                    <div class="channel3">
-                        <img src="images\videos images\Captura de pantalla 2025-08-13 001547.png" alt="channel logo" id="video3-logo">
-                    </div>
-                    <div class="video3-title">
-                        <p><strong>¿Qué pasaría si arrojáramos nuestra basura a los volcanes?</strong></p>
-                    </div>
-                    <div class="video3-option">
-                        <img src=".\images\videos images\options-vertical-svgrepo-com.svg" alt="tres puntos" style="width: 30px; height: 30px;">
-                    </div>
-                </section>
-                    <div class="channel3-name">
-                        <p>Qué pasaría si - What If Español</p>
-                        <p>2.4 M de vistas • hace 5 años</p>
-                    </div>
-            </section>
-            <section class="section-two">
-                <section class="video1">
-                        <div class="thumbnail-1">
-                        <img src="">
-                        </div>
-                    <section class="titular1">
-                        <div class="channel1">
-                        </div>
-                        <div class="video1-title">
-                        </div>
-                        <div class="video-option">
-                        </div>
-                    </section>
-                        <div class="channel1-name">
-                        </div>
-                </section>
-                <section class="video2">
+                    <section class="video-container" id="v-2">
                         <div class="thumbnail-2">
-                        <img src="">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-12 194731.png"
+                              alt="miniatura-2" id="image2">
                         </div>
-                    <section class="titular2">
-                        <div class="channel2">
-                        </div>
-                        <div class="video2-title">
-                        </div>
-                        <div class="video-option">
+                        <section class="titular-channel-2">
+                            <div class="channel-logo-2">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-12 194813.png"
+                                    alt="channel-logo" id="channel2-logo">
+                            </div>
+                            <div class="video-title-2">
+                                <p><strong>HICE UNA ESFERA PERFECTA DE TIERRA ORDINARIA - UNA ANTIGUA TÉCNICA </strong></p>
+                            </div>
+                            <div class="video-option-2">
+                                    <img src=".\images\videos images\options-vertical-svgrepo-com.svg" alt="options."
+                                        style="width: 30px; height: 30px;">
+                            </div>
+                        </section>
+                        <div class="viewers-name-2">
+                                <p>El Mundo de Slivki</p>
+                                <p>2.6 M de vistas • hace 3 semanas</p>
                         </div>
                     </section>
-                        <div class="channel2-name">
-                        </div>
-                </section>
-                <section class="video3">
+                    <section class="video-container" id="v-3">
                         <div class="thumbnail-3">
-                        <img src="">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-13 001526.png"
+                                alt="estoy cansado jefe" id="image3">
                         </div>
-                    <section class="titular3">
-                        <div class="channel3">
-                        </div>
-                        <div class="video3-title">
-                        </div>
-                        <div class="video-option">
+                        <section class="titular-channel-3">
+                            <div class="channel-logo-3">
+                                <img src="images\videos images\Captura de pantalla 2025-08-13 001547.png"
+                                    alt="channel logo" id="video3-logo">
+                            </div>
+                            <div class="video-title-3">
+                                <p><strong>¿Qué pasaría si arrojáramos nuestra basura a los volcanes?</strong></p>
+                            </div>
+                            <div class="video-option-3">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" alt="tres puntos"
+                                    style="width: 30px; height: 30px;">
+                            </div>
+                        </section>
+                        <div class="viewers-name-3">
+                            <p>Qué pasaría si - What If Español</p>
+                            <p>2.4 M de vistas • hace 5 años</p>
                         </div>
                     </section>
-                        <div class="channel3-name">
+                    <section class="video-container" id="v-4">
+                        <div class="thumbnail-4">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-13 133608.png" alt="miniatura-v4" id="image4">
                         </div>
+                        <section class="titular-channel-4">
+                            <div class="channel-logo-4">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-13 133633.png" alt="logo canal 4" id="video4-logo">
+                            </div>
+                            <div class="video-title-4">
+                                <p><strong>Los discos Bluray NO deberian EXISTIR LA DURA REALIDAD ☢️</strong></p>
+                            </div>
+                            <div class="video-option-4">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" alt="opciones-v4" id="option-v4">
+                            </div>
+                        </section>
+                        <div class="viewers-name-4">
+                            <p>Danskyx</p>
+                            <p>967 k vistas • hace 1 año</p>
+                        </div>
+                    </section>
+                    <section class="video-container" id="v-5">
+                        <div class="thumbnail-5">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-13 173915.png" alt="miniatura-5" id="image5">
+                        </div>
+                        <section class="titular-channel-5">
+                            <div class="channel-logo-5">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-13 173927.png" alt="logo canal" id="video5-logo">
+                            </div>
+                            <div class="video-title-5">
+                                <p><strong>La Entrada Decía “NO PASAR”... Pero Decidieron Ignorarla</strong></p>
+                            </div>
+                            <div class="video-option-5">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" alt="opciones de v4" id="option-v5">
+                            </div>
+                        </section>
+                        <div class="viewers-name-5">
+                            <p>Misterios Sumergidos</p>
+                            <p>48 k vistas • hace 3 semanas</p>
+                        </div>
+                    </section> 
+                    <section class="video-container" id="v-6">
+                        <div class="thumbnail-6">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-13 180228.png" alt="miniatura-6" id="image6">
+                        </div>
+                        <section class="titular-channel-6">
+                            <div class="channel-logo-6">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-13 180245.png" id="video6-logo">
+                            </div>
+                            <div class="video-title-6">
+                                <p><strong>Pato es denunciado por atacar a mascotas y recibe prisión domiciliaria</strong></p>
+                            </div>
+                            <div class="video-option-6">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" alt="opciones video 6" id="option-v6">
+                            </div>
+                        </section>
+                        <div class="viewers-name-6">
+                            <p>EXCELSIOR</p>
+                            <p>139 k vistas • hace 6 días</p>
+                        </div>
+                    </section> 
+                    <section class="video-container" id="v-7">
+                        <div class="thumbnail-7">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-13 183052.png" alt="miniatura-7" id="image7">
+                        </div>
+                        <section class="titular-channel-7">
+                            <div class="channel-logo-7">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-13 183118.png" alt="logo de canal 7" id="video7-logo">
+                            </div>
+                            <div class="video-title-7">
+                                <p><strong>¿Qué pasa si entras a un microondas? (según la ciencia)</strong></p>
+                            </div>
+                            <div class="video-option-7">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" id="option-v7">
+                            </div>
+                        </section>
+                        <div class="viewers-name-7">
+                            <p>Fan de Ciencia</p>
+                            <p>25 k vistas • hace 12 días</p>
+                        </div>
+                    </section>
+                    <section class="video-container" id="v-8">
+                        <div class="thumbnail-8">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-13 183825.png" id="image8">
+                        </div>
+                        <section class="titular-channel-8">
+                            <div class="channel-logo-8">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-13 183849.png" id="video8-logo">
+                            </div>
+                            <div class="video-title-8">
+                                <p><strong>TODAS las CLASES SOCIALES explicadas en 10 minutos</strong></p>
+                            </div>
+                            <div class="video-option-8">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" id="option-v8">
+                            </div>
+                        </section>
+                        <div class="viewers-name-8">
+                            <p>Te hago un croquis</p>
+                            <p>786 k vistas • hace 8 meses</p>
+                        </div>
+                    </section>
+                    <section class="video-container" id="v-9">
+                        <div class="thumbnail-9">
+                            <img src=".\images\videos images\Captura de pantalla 2025-08-13 190109.png" id="image9">
+                        </div>
+                        <section class="titular-channel-9">
+                            <div class="channel-logo-9">
+                                <img src=".\images\videos images\Captura de pantalla 2025-08-13 190123.png" id="video9-logo">
+                            </div>
+                            <div class="video-title-9">
+                                <p><strong>¿Qué es ese bicho en la pared?/La polilla del estuche</strong></p>
+                            </div>
+                            <div class="video-option-8">
+                                <img src=".\images\videos images\options-vertical-svgrepo-com.svg" id="option-v9">
+                            </div>
+                        </section>
+                        <div class="viewers-name-9">
+                            <p>Guia Salvaje</p>
+                            <p>48 k vistas • hace 1 año</p>
+                        </div>
+                    </section> 
                 </section>
-
-
             </section>
-        </section>
-    </section>
- </main>
+    </main>
 </body>
+
 </html>

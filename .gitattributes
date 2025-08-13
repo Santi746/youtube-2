@@ -1,3 +1,24 @@
 # Auto detect text files and perform LF normalization
 * text=auto #717171
 #0f0f0f  #212121  #282828 #f1f1f1  255, 255, 255, 0.1
+
+       <section class="video-container" id="v-4">
+                        <div class="thumbnail-4">
+                            <img src="">
+                        </div>
+                        <section class="titular-channel-4">
+                            <div class="channel-logo-4">
+                                <img src="">
+                            </div>
+                            <div class="video-title-4">
+                                <p><strong></strong></p>
+                            </div>
+                            <div class="video-option-4">
+                                <img src="">
+                            </div>
+                        </section>
+                        <div class="viewers-name-4">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </section> 

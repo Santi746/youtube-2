@@ -9,6 +9,7 @@
 body {
     background-color: #0f0f0f;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -49,7 +50,7 @@ body {
     cursor: pointer;
 }
 
-/*Selectores mas especificos*/
+/**/
 
 #burger-icon {
     width: 32px;
@@ -119,7 +120,7 @@ body {
 }
 
 
-/*navegacion inferior*/
+
 
 #notification-logo {
     padding: 2px;
@@ -147,7 +148,7 @@ body {
 }
 
 
-/* **Main Content** */
+/* *Main Content* */
 
 .main {
     display: grid;
@@ -161,7 +162,7 @@ body {
 
 
 
-/*navegacion inferior,temas*/
+ /* navegacion inferior,temas */
 
 .themes {
     display: flex;
@@ -190,6 +191,7 @@ body {
 
 /* aside small/pequeno */
 
+
 .small-aside {
     display: flex;
     flex-direction: column;
@@ -215,28 +217,23 @@ body {
     margin: 8px;
 }
 
-.first-section {     /*primeros 3 videos */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.videos-section {    /*contener base de todos los videos */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    place-content: center;
+    place-items: center;
     gap: 14px;
     margin-right: 29px;
 }
 
-/* Video1 General Changes */
+/* Video1 General Changes (maduro) v-1 */
 
-.video1 {
+.video-container {
     display: grid;
     grid-template-columns: 450px;
     padding-left: 12px;
     cursor: pointer;
-}
-
-/*Pseudoclases, Small Aside */
-
-.home:hover {
-    background-color: #717171a0;
-    border-radius:50px;
 }
  
 /* general changes,Videos */
@@ -245,24 +242,11 @@ body {
     margin: 8px;
 }
 
-.first-section {     /*primeros 3 videos */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 14px;
-    margin-right: 29px;
+#v-1 {                     /*V-1 = video 1 */
+    height: 45.7vh;
 }
 
-/* Video1 General Changes */
-
-.video1 {
-    display: grid;
-    grid-template-columns: 450px;
-    padding-left: 12px;
-    cursor: pointer;
-}
-
-.titular1 {
+.titular-channel-1 {
     display: flex;
     justify-content: start;
     align-items: start;
@@ -270,7 +254,9 @@ body {
     gap: 8px
 }
 
-/* selecciones especificas,video1 */
+/* selecciones especificas video1 (v-1) */
+
+
 
 #image1 {
     width: 450px;
@@ -278,7 +264,7 @@ body {
 }
 
 
-.channel1 {
+.channel-logo-1 {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -291,7 +277,7 @@ body {
 
 }
 
-.video1-title {
+.video-title-1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -300,7 +286,7 @@ body {
     font-size: 16px;
 }
 
-.channel1-name {
+.viewers-name-1 {
     display: flex;
     display: grid;
     grid-template-columns: 350px;
@@ -309,30 +295,20 @@ body {
     align-items: start;
     text-align: start;
     color: #AAAA;
-    width: 28.5vw;
+    width: 28.3vw;
     font-size: 14px;
+    gap: 4px;
 }
 
 
 /** Video2-General Changes **/
-
-.video2 {
-    display: grid;
-    grid-template-columns: 450px;
-    cursor: pointer;
-}
 
 .thumbnail-2 {
     width: 450px;
     height: 240px;
 }
 
-/*.all-content {
-    height: 10vh;
-me jode el video 1
-} */
-
-.titular2 {
+.titular-channel-2 {
     display:flex;
     justify-content: start;
     align-items: start;
@@ -353,7 +329,7 @@ me jode el video 1
     height: 36px;
 }
 
-.video2-title {
+.video-title-2 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -361,9 +337,16 @@ me jode el video 1
     font-size: 16px;
     color: #F1F1F1;
     gap: 7px;
+     /* p{
+        width: 348px;
+        height: 38px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } */
 }
 
-.channel2-name {
+.viewers-name-2 {
     display: flex;
     display: grid;
     grid-template-columns: 350px;
@@ -376,16 +359,10 @@ me jode el video 1
     font-size: 14px;
     width: 29.8vw;
 }
- /*por alguna razon,cuarquier cambio en el padding margin gap widht height o flexbox afecta o puede afectar a los otros videos. */
 
- /* video 3 general changes */
+ /* V-3 general changes */
 
- .video3 {
-    display: grid;
-    grid-template-columns: 450px;
-    cursor: pointer;
- }
-.titular3 {
+.titular-channel-3 {
     display:flex;
     justify-content: start;
     align-items: start;
@@ -405,7 +382,7 @@ me jode el video 1
     height: 36px;
  }
 
-.video3-title {
+.video-title-3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -414,7 +391,7 @@ me jode el video 1
     font-size: 16px;
 }
 
-.channel3-name {
+.viewers-name-3 {
     display: flex;
     display: grid;
     grid-template-columns: 350px;
@@ -427,13 +404,310 @@ me jode el video 1
     font-size: 14px;
 }
 
-/* section 2 videos */
+/* V-4 General Options */
 
-.section-two {
-    display: flex;
-    flex-direction: row;
+.titular-channel-4 {
+    display:flex;
     justify-content: space-between;
-    gap: 14px;
-    margin-right: 29px;
+    align-items: start;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px;
 }
-    
+
+/* V-4 selectores especificos */
+
+#image4 {
+    width: 450px;
+    height: 240px;
+}
+
+#video4-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.video-title-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    color: #F1F1F1;
+    font-size: 16px;
+    gap: 12px;
+    width: 23.5vw;
+}
+
+#option-v4 {
+    width: 30px;
+    height: 30px;
+}
+
+.viewers-name-4 {
+    display: flex;
+    display: grid;
+    grid-template-columns: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    color: #AAAA;
+    gap: 4px;
+    font-size: 14px;
+}
+
+/* V-5 general changes */
+
+.titular-channel-5 {
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px;
+}
+
+/* V-5 Cambios Especificos */
+
+#image5 {
+    width: 450px;
+    height: 240px;
+}
+
+#video5-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.video-title-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    color: #F1F1F1;
+    font-size: 16px;
+    gap: 12px;
+    width: 23.5vw;
+}
+
+#option-v5 {
+    width: 30px;
+    height: 30px;
+}
+
+.viewers-name-5 {
+    display: flex;
+    display: grid;
+    grid-template-columns: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    color: #AAAA;
+    gap: 4px;
+    font-size: 14px;
+}
+
+/* V-6 Cambios Generales */
+
+.titular-channel-6 {
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px;
+}
+
+/* V-6 Selectores Especificos */
+
+#image6 {
+    width: 450px;
+    height: 240px;
+}
+
+#video6-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.video-title-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    color: #F1F1F1;
+    font-size: 16px;
+    gap: 12px;
+}
+
+#option-v6 {
+    width: 30px;
+    height: 30px;
+}
+
+.viewers-name-6 {
+    display: flex;
+    display: grid;
+    grid-template-columns: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    color: #AAAA;
+    gap: 4px;
+    font-size: 14px;
+}
+
+/* V-7 Cambios Generales */
+
+.titular-channel-7 {
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px;
+}
+
+/* V-7 selectores especificos */
+
+#image7 {
+    width: 450px;
+    height: 240px;
+}
+
+#video7-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.video-title-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    color: #F1F1F1;
+    font-size: 16px;
+    gap: 12px;
+}
+
+#option-v7 {
+    width: 30px;
+    height: 30px;
+}
+
+.viewers-name-7 {
+    display: flex;
+    display: grid;
+    grid-template-columns: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    color: #AAAA;
+    gap: 4px;
+    font-size: 14px;
+}
+
+/* V-8 Cambios Generales */
+
+.titular-channel-8 {
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px;
+}
+
+/* V-8 selectores especificos */
+
+#image8 {
+    width: 450px;
+    height: 240px;
+}
+
+#video8-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.video-title-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    color: #F1F1F1;
+    font-size: 16px;
+    gap: 12px;
+}
+
+#option-v8 {
+    width: 30px;
+    height: 30px;
+}
+
+.viewers-name-8 {
+    display: flex;
+    display: grid;
+    grid-template-columns: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    color: #AAAA;
+    gap: 4px;
+    font-size: 14px;
+}
+
+/* V-9 Cambios Generales */
+
+.titular-channel-9 {
+    display:flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px;
+}
+
+/* V-9 selectores especificos */
+
+#image9 {
+    width: 450px;
+    height: 240px;
+}
+
+#video9-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.video-title-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    color: #F1F1F1;
+    font-size: 16px;
+    gap: 12px;
+}
+
+#option-v9 {
+    width: 30px;
+    height: 30px;
+}
+
+.viewers-name-9 {
+    display: flex;
+    display: grid;
+    grid-template-columns: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    color: #AAAA;
+    gap: 4px;
+    font-size: 14px;
+}
