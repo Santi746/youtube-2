@@ -258,25 +258,22 @@ width: 124px;
     height: 36px;
 }
 
+.video-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    font-size: 16px;
+    color: #F1F1F1;
+    gap: 7px;
+}
+
 .options-size {
     width: 30px;
     height: 30px;
 }
 
-
-/* selectores de video1 (V-1) */
-
-.video-name-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    font-size: 16px;
-    color: #F1F1F1;
-    gap: 7px;
-}
-
-.viewers-name-1 {
+.viewers-name {
     display: grid;
     grid-template-columns: 350px;
     justify-content: center;
@@ -288,208 +285,6 @@ width: 124px;
 }
 
 
-
-
-/* Selectores de video2 (V-2) */
-
-.video-name-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    font-size: 16px;
-    color: #F1F1F1;
-    gap: 7px;
-}
-
-.viewers-name-2 {
-    display: grid;
-    grid-template-columns: 350px;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
-
-/*Selectores de video3 (V-3) */
-
-
-.video-name-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    color: #F1F1F1;
-    font-size: 16px;
-}
-
-.viewers-name-3 {
-    display: flex;
-    display: grid;
-    grid-template-columns: 350px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
-
-/* Selectores de Video4 (V-4) */
-
-.video-name-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    color: #F1F1F1;
-    font-size: 16px;
-    gap: 12px;
-    width: 23.5vw;
-}
-
-
-.viewers-name-4 {
-    display: flex;
-    display: grid;
-    grid-template-columns: 350px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
-
-/* Selectores de video5 (V-5) */
-
-.video-name-5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    color: #F1F1F1;
-    font-size: 16px;
-    gap: 12px;
-    width: 23.5vw;
-}
-
-.viewers-name-5 {
-    display: flex;
-    display: grid;
-    grid-template-columns: 350px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
-
-/* Selectores de video6 (V-6) */
-
-.video-name-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    color: #F1F1F1;
-    font-size: 16px;
-    gap: 12px;
-}
-
-.viewers-name-6 {
-    display: flex;
-    display: grid;
-    grid-template-columns: 350px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
-
-/* Selectores de Video7 (V-7) */
-
-.video-name-7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    color: #F1F1F1;
-    font-size: 16px;
-    gap: 12px;
-}
-
-.viewers-name-7 {
-    display: flex;
-    display: grid;
-    grid-template-columns: 350px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
-
-/* Selectores de Video8 (V-8) */
-
-.video-name-8 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    color: #F1F1F1;
-    font-size: 16px;
-    gap: 12px;
-}
-
-.viewers-name-8 {
-    display: flex;
-    display: grid;
-    grid-template-columns: 350px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
-
-/* Selectores de video9 (V-9) */
-
-.video-name-9 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: start;
-    color: #F1F1F1;
-    font-size: 16px;
-    gap: 12px;
-}
-
-.viewers-name-9 {
-    display: flex;
-    display: grid;
-    grid-template-columns: 350px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
-    color: #AAAA;
-    gap: 4px;
-    font-size: 14px;
-}
 
 /* RESPONSIVE */
 
@@ -508,12 +303,6 @@ width: 124px;
         flex-direction: column;
         grid-template-columns: 200px;
         width: 95vw;
-    }
-    .video-name-5 {
-        width: 95vw;
-    }
-    .video-name-4 {
-        width: 100vw;
     }
     .logo-burger {
         width: 60px;
@@ -546,7 +335,7 @@ width: 124px;
         width: 10vw;
 
     }
-    .viewers-name-1 {
+    .viewers-name {
     display: grid;
     grid-template-columns: 350px;
     justify-content: center;
@@ -559,7 +348,17 @@ width: 124px;
 }
 /*tamano tablet 768px */
 
- @media (min-width: 768px){
+@media (min-width: 768px){
+    .videos-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        place-content: center;
+        place-items: center;
+        gap: 12px;
+        width: 100dvw;
+        margin-right: 12px;
+    }
     .search-bar {
         width: 115px;
     }
@@ -581,7 +380,7 @@ width: 124px;
         width: 344px;
         height: 193px;
     } 
-    .viewers-name-1 {
+    .viewers-name {
     display: grid;
     grid-template-columns: 250px;
     justify-content: center;
@@ -591,4 +390,99 @@ width: 124px;
     font-size: 14px;
     gap: 4px;
     }
+}  
+
+/* tamano table expandido 1000px */
+
+@media (min-width: 1000px){
+    .aside-nav {
+        display: contents;
+        width: auto;
+        height: auto;
+    }
+    .small-aside {
+        justify-content: start;
+    }
+    .videos-section {
+        width: 82vw;
+    }                                            /* ← revisar esto (error) causante de la mala posicion de las grillas */
+    .thumbnails-size{
+        width: 420px;
+        height: 249px;
+    }
 }
+
+/* Tamano tipo laptop 1025px */
+
+@media (min-width: 1025px){
+    .search-bar {
+        width: 480px;
+        height: 40px;
+    }
+    .logo-mic {
+        display: contents;
+        width: 40px;
+    }
+}
+ /* tamano tipo laptop 1145px */
+
+@media (min-width: 1145px){
+    .videos-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 92vw;
+    }
+    .thumbnails-size{
+        width: 324px;
+        height: 182px;
+    }
+    .search-bar {
+        width: 520px;
+        height: 40px;
+    }
+}
+
+/* tamano tipo laptop 1200px */
+
+@media (min-width: 1200px){
+    .thumbnails-size{
+        width: 350px;
+        height: 220px;
+    }
+}
+
+@media (min-width: 1300px){
+    .thumbnails-size{
+        width: 360px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1385px){
+    .thumbnails-size{
+        width: 400px;
+        height: 240px;
+    }
+}
+
+@media (min-width: 1470px){
+    .thumbnails-size{
+        width: 435px;
+        height: 235px;
+    }
+}
+
+@media (min-width: 1300px){  /* maaximo */
+    .videos-section {
+        /*width: 85vw;*/
+        justify-content: center;
+        align-items: center;
+    }
+    .video-container {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
